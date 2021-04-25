@@ -1,0 +1,37 @@
+.portfolio-wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15rem 3rem;
+}
+
+.column {
+  flex: 25%;
+  width: auto;
+  padding: 0 0.4rem;
+}
+
+.column img {
+  margin-top: 0.8rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+// Media
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    margin: 10rem 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .column {
+    flex: 100%;
+  }
+}

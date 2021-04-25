@@ -1,0 +1,165 @@
+.contact-wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.contact-content {
+  display: flex;
+  margin: 15rem 10rem;
+}
+
+// Left section
+
+.contact-left {
+  margin-right: 3rem;
+  width: 40%;
+}
+
+.box-contact {
+  align-items: center;
+  background-color: $primary-color;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding: 6rem 0;
+  h1,
+  p {
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-family: $primary-font;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+  svg {
+    fill: white;
+    transition: 0.3s ease-out;
+    &:hover {
+      fill: $secondary-color;
+    }
+  }
+  .box-icon {
+    display: flex;
+    align-items: center;
+    .box-facebook {
+      margin-right: 1rem;
+    }
+  }
+}
+
+// Right section
+
+.contact-right {
+  background-color: $tertiary-color;
+  margin-left: 3rem;
+  padding: 3rem;
+  width: 60%;
+  h1 {
+    font-family: $primary-font;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  label {
+    margin-bottom: 0.5rem;
+    span {
+      color: $quaternary-color;
+    }
+  }
+  input,
+  textarea {
+    background-color: $tertiary-color;
+    border: none;
+    border-bottom: 0.1rem solid $secondary-color;
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  #decouverte {
+    margin-bottom: 1rem;
+  }
+
+  .decouverte {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      margin-right: 1.5rem;
+    }
+    & > div > * {
+      margin-right: 0.5rem;
+      &:first-child {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+#form-submit {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  height: 3rem;
+  margin: 3rem auto 0 auto;
+  width: 8rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-out;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+// Media
+
+@media (max-width: 1280px) {
+  .contact-content {
+    display: flex;
+    margin: 15rem 5rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .contact-content {
+    display: flex;
+    margin: 15rem 3rem;
+  }
+
+  .contact-left {
+    margin-right: 1rem;
+    width: 40%;
+  }
+
+  .contact-right {
+    margin-left: 1rem;
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    margin: 10rem 3rem;
+  }
+
+  .contact-left {
+    margin-bottom: 3rem;
+    margin-right: 0rem;
+    width: 100%;
+  }
+
+  .contact-right {
+    margin-left: 0rem;
+    width: 100%;
+  }
+}

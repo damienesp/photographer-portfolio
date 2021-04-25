@@ -1,0 +1,36 @@
+.carousel-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 5rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.slide {
+  display: flex;
+  opacity: 0;
+  transition: 0.7s linear 0.3s;
+  &.active {
+    opacity: 1;
+    transition: 0.7s linear 0.3s;
+  }
+
+  p {
+    background-color: rgb(240, 240, 240);
+    font-size: 1.4rem;
+    margin-right: 3rem;
+    padding: 3rem 3rem;
+    width: 60%;
+  }
+  img {
+    width: 30%;
+  }
+}

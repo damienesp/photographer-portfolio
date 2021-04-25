@@ -1,0 +1,48 @@
+.footer-wrapper {
+  background-color: $primary-color;
+  color: white;
+  width: 100%;
+}
+
+.footer-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  margin: 0 auto;
+  max-width: 1920px;
+  p {
+    cursor: default;
+    margin: 0 3rem;
+  }
+  .footer-icon {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3rem;
+    svg {
+      display: block;
+      fill: white;
+      transition: 0.3s ease-out;
+      &:hover {
+        fill: $secondary-color;
+      }
+    }
+    .footer-facebook {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+// Media
+
+@media (max-width: 480px) {
+  .footer-content {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .footer-icon {
+    transform: scale(0.8);
+  }
+}

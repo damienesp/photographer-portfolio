@@ -1,0 +1,41 @@
+.infos-wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 90vh;
+}
+
+.infos-content {
+  margin: 10rem 3rem;
+  p {
+    font-weight: 400;
+    width: 50%;
+  }
+  span {
+    font-weight: 600;
+    color: $quaternary-color;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+// Media
+
+@media (max-width: 1080px) {
+  .infos-content {
+    p {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .infos-content {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    p {
+      width: 100%;
+    }
+  }
+}
