@@ -3,14 +3,19 @@
   display: flex;
   justify-content: center;
   button {
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
     font-size: 3rem;
-    padding: 5rem;
     &:focus {
       outline: none;
     }
+  }
+  .btn-left {
+    margin-right: 2rem;
+  }
+  .btn-right {
+    margin-left: 2rem;
   }
 }
 
@@ -24,13 +29,40 @@
   }
 
   p {
+    align-self: center;
     background-color: rgb(240, 240, 240);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-right: 3rem;
-    padding: 3rem 3rem;
+    padding: 3rem;
     width: 60%;
   }
   img {
-    width: 30%;
+    width: 40%;
+  }
+}
+
+// Media
+
+@media (max-width: 768px) {
+  .slide {
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 1rem;
+      margin: 0;
+      padding: 3rem;
+      width: 100%;
+    }
+    img {
+      display: none;
+    }
+  }
+  .carousel-wrapper {
+    .btn-left {
+      margin-right: 1rem;
+    }
+    .btn-right {
+      margin-left: 1rem;
+    }
   }
 }

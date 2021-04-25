@@ -14,7 +14,9 @@ const Carousel = ({ carouselData }) => {
 
   return (
     <div className="carousel-wrapper">
-      <button onClick={prevSlide}>‹</button>
+      <button className="btn-left" onClick={prevSlide}>
+        ‹
+      </button>
       {carouselData.map((slide, index) => {
         return (
           <div
@@ -28,7 +30,9 @@ const Carousel = ({ carouselData }) => {
           </div>
         );
       })}
-      <button onClick={nextSlide}>›</button>
+      <button className="btn-right" onClick={nextSlide}>
+        ›
+      </button>
     </div>
   );
 };
