@@ -66,3 +66,22 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+// Pexels photos from :
+// Markus Spiske
+// Allan Mas
+// Anna Shvets
+// Any Lane
+// Bekir Donmez
+// Cottonbro
+// Duong Nhan
+// Emma Bauso
+// Eva Elijas
+// Gary Barnes
+// Jonathan Borba
+// Josh Hild
+// Karolina Grabowska
+// Monica Silvestre
+// Taryn Elliott
+// Wendel Moretti
+// Zen Chung

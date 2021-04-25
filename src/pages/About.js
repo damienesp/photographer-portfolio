@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import amandes from "../img/about/amandes.jpg";
 import chat from "../img/about/chat.jpg";
 
-const Propos = () => {
+const About = () => {
   return (
     <div className="about-wrapper">
       <Navigation />
@@ -68,4 +68,4 @@ const Propos = () => {
   );
 };
 
-export default Propos;
+export default About;
